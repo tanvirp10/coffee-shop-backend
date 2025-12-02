@@ -1,0 +1,34 @@
+### Test Root Route
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Test Get All Menu Items
+GET http://localhost:3000/menu
+Content-Type: application/json
+
+### Test Add Menu Item
+POST http://localhost:3000/menu
+Content-Type: application/json
+
+{
+  "name": "Espresso",
+  "description": "Strong coffee shot",
+  "price": 2.99,
+  "category": "Beverage"
+}
+
+### Test Get Single Menu Item
+GET http://localhost:3000/menu/1
+Content-Type: application/json
+
+### Test Update Menu Item
+PUT http://localhost:3000/menu/1
+Content-Type: application/json
+
+{
+  "price": 3.49
+}
+
+### Test Delete Menu Item
+DELETE http://localhost:3000/menu/1
+Content-Type: application/json
