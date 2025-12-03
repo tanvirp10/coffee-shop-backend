@@ -11,6 +11,8 @@ const __dirname = path.dirname(__filename);
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const dbConfig = config[env]; // Use config from the imported module
+console.log('🔥 NODE_ENV:', env);
+console.log('🔥 DB Config:', dbConfig);
 const db = {};
 
 // Initialize Sequelize using dbConfig
