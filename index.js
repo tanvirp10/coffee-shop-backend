@@ -25,7 +25,7 @@ db.sequelize.sync().then(() => {
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://192.168.0.116:5173'],
+  origin: '*',
   credentials: true
 }));
 app.use(express.json()); // Parse incoming JSON requests
